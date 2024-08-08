@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Selection</title>
+    <style>
+      .color-option {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .color-option.selected {
+        border-color: black;
+      }
+
+      .size-option,
+      .material-option {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+      }
+
+      .disabled {
+        color: grey;
+        pointer-events: none;
+        border: 1px solid #eee;
+      }
+
+      .selected {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Select Product</h1>
+    <div id="color-options"></div>
+    <div id="size-options"></div>
+    <div id="material-options"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
